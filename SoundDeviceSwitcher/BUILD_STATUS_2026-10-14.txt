@@ -1,0 +1,23 @@
+SoundDeviceSwitcher - Option A - build status (2026-10-14)
+
+STATUS: NOT COMPILED / Windows executable not generated here.
+
+The source is for Windows Forms on .NET Framework 4.x and explicitly builds
+with %WINDIR%\Microsoft.NET\Framework64\v4.0.30319\csc.exe.
+The available execution environment is Debian GNU/Linux 13 and has no Windows,
+.NET Framework compiler, dotnet SDK, Mono compiler, PowerShell or Wine.
+Network access from the build environment is unavailable (DNS resolution fails),
+so a cross-compilation toolchain could not be installed.
+
+SECURITY TESTS:
+  python -m unittest discover -s tests -v
+  Result: 7 tests passed, 0 failures.
+
+TO COMPILE:
+  1. Extract this ZIP on Windows 10 or Windows 11.
+  2. Double-click Build_Windows_DoubleClick.cmd.
+  3. Find bin\SoundDeviceSwitcher.exe (created by build.ps1 on success).
+  4. Validate UI and Voicemeeter functionality on a Windows PC before distribution.
+
+CAUTION: The executable embedded in the ORIGINAL uploaded project is not
+included. It predates the security fixes and should not be redistributed as fixed.
